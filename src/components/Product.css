@@ -1,0 +1,136 @@
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+    max-height: 400px;
+    min-width: 100px;
+    background:white;
+    z-index: 1;
+}
+
+/* .product>img{
+    max-height: 200px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 10px;
+    z-index: -1;
+}
+
+.product__rating{
+    display: flex;
+   
+}
+
+.product__price{
+    margin-top: 5px; 
+}
+
+.product__info{
+    height: 100px;
+    margin-bottom:5px;
+}
+
+.product > button {
+    background: #f0c14b;
+    border: 1px solid;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+} */
+
+/* Default styles */
+.product > img {
+    max-height: 200px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 10px;
+    z-index: -1;
+  }
+  
+  .product__rating {
+    display: flex;
+  }
+  
+  .product__price {
+    margin-top: 5px;
+  }
+  
+  .product__info {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+  
+  .product > button {
+    background: #f0c14b;
+    border: 1px solid;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+  }
+  
+  /* Media query for small screens */
+  @media (max-width: 576px) {
+    .product > img {
+      max-height: 150px;
+      margin-bottom: 5px;
+    }
+  
+    .product__rating {
+      flex-wrap: wrap;
+    }
+  
+    .product__info {
+      height: auto;
+    }
+  
+    .product > button {
+      font-size: 14px;
+      padding: 5px 10px;
+    }
+  }
+  
+  /* Media query for medium screens */
+  @media (min-width: 577px) and (max-width: 992px) {
+    .product > img {
+      max-height: 180px;
+      margin-bottom: 8px;
+    }
+  
+    .product__rating {
+      flex-wrap: wrap;
+    }
+  
+    .product__info {
+      height: auto;
+    }
+  
+    .product > button {
+      font-size: 16px;
+      padding: 8px 12px;
+    }
+  }
+  
+  /* Media query for large screens */
+  @media (min-width: 993px) {
+    .product > img {
+      max-height: 200px;
+      margin-bottom: 10px;
+    }
+  
+    .product__rating {
+      flex-wrap: nowrap;
+    }
+  
+    .product__info {
+      height: 100px;
+    }
+  
+    .product > button {
+      font-size: 18px;
+      padding: 10px 15px;
+    }
+  }
+  
+  
