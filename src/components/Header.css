@@ -1,4 +1,4 @@
-.header{
+/* .header{
     height: 60px;
     display: flex;
     align-items: center;
@@ -70,4 +70,134 @@ border-radius: 24px;
     margin-left: 10px;
     margin-right: 10px;
   
-}
+} */
+
+.header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background: #131921;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .header__logo {
+    width: 100px;
+    object-fit: contain;
+    margin: 0 20px;
+    margin-top: 18px;
+  }
+  
+  .header__search {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 24px;
+  }
+  
+  .header__searchInput {
+    height: 12px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .header__searchIcon {
+    padding: 5px;
+    height: 22px !important;
+    background: #cd9042;
+    border-radius: 10px;
+  }
+  
+  .header__nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .header__optionLineOne {
+    font-size: 10px;
+  }
+  
+  .header__optionLineTwo {
+    font-size: 13px;
+    font-weight: 800;
+  }
+  
+  .header__option {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+  }
+  
+  .header__optionBasket {
+    display: flex;
+    color: white;
+    align-items: center;
+  }
+  
+  .header__basketCount {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .header__logo {
+      width: 80px;
+      margin: 0 10px;
+      margin-top: 12px;
+    }
+    
+    .header__optionLineOne {
+      font-size: 8px;
+    }
+    
+    .header__optionLineTwo {
+      font-size: 11px;
+      font-weight: 700;
+    }
+    
+    .header__option {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Adjustments for even smaller screens */
+    .header__logo {
+      width: 60px;
+      margin: 0 5px;
+      margin-top: 8px;
+    }
+    
+    .header__searchInput {
+      padding: 8px;
+      border-radius: 8px;
+    }
+    
+    .header__optionLineOne {
+      font-size: 6px;
+    }
+    
+    .header__optionLineTwo {
+      font-size: 9px;
+      font-weight: 600;
+    }
+    
+    .header__option {
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+    
+    .header__basketCount {
+      margin-left: 6px;
+      margin-right: 6px;
+    }
+  }
+  

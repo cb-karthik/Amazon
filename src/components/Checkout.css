@@ -1,3 +1,29 @@
+/* .checkout {
+  display: flex;
+  padding: 20px;
+  background-color: rgb(250, 250, 250);
+  height: max-content;
+  width: 100%;
+}
+
+.checkout__left {
+  width: 100%;
+}
+
+.checkout__ad {
+  width: 100%;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+.checkout__title {
+  margin-right: 10px;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+} */
+
+
+/* Base styles */
 .checkout {
   display: flex;
   padding: 20px;
@@ -20,4 +46,47 @@
   margin-right: 10px;
   padding: 10px;
   border-bottom: 1px solid lightgray;
+}
+
+/* Media Queries */
+
+/* For screens smaller than 768px (e.g., mobile devices) */
+@media screen and (max-width: 767px) {
+  .checkout {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .checkout__title {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .checkout__ad {
+    margin-bottom: 20px;
+  }
+}
+
+/* For screens between 768px and 1023px (e.g., tablets) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .checkout {
+    padding: 15px;
+  }
+
+  .checkout__title {
+    padding: 5px;
+  }
+}
+
+/* For screens larger than 1023px (e.g., desktops) */
+@media screen and (min-width: 1024px) {
+  .checkout__ad {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .checkout__title {
+    margin-right: 10px;
+    padding: 10px;
+  }
 }
